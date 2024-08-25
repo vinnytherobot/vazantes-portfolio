@@ -1,0 +1,121 @@
+.card {
+    display: flex;
+    margin: auto;
+    width: 95%;
+    height: auto;
+    padding: 0.5em 2em;
+    gap: 1em;
+}
+
+.card .responsiveInfo {
+    display: none;
+}
+
+.card .info .title {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    color: var(--title-color);
+    font-size: 2.7rem;
+}
+
+.card .info .description {
+    font-family: "Kanit", sans-serif;
+    font-size: 1.4em;
+    font-weight: 500;
+    text-align: justify;
+    color: var(--description-color); 
+    margin-bottom: 6em;
+}
+
+.card .info a {
+    color: var(--title-color);
+    border-radius: var(--image-border-radius);
+    border: 1px solid var(--title-color);
+    padding: 1em;
+    font-weight: 700;
+    font-size: 1.3em;
+    background-color: transparent;
+    user-select: none;
+    text-decoration: none;
+}
+
+.card .info a:hover {
+    transition: all 1s ease;
+    background-color: var(--title-color);
+    color: var(--primary-background-color);
+}
+
+.card img {
+    width: 38rem;
+    height: 36rem;
+    border-radius: var(--image-border-radius);
+}
+
+
+/*      RESPONSIVE        */
+
+
+@media (max-width: 1280px){
+    .card {
+        display: block;
+        padding: 0;
+    }
+
+    .card .info {
+        display: none;
+    }
+
+    .card .responsiveInfo {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    .card .responsiveInfo .title {
+        margin-top: 1em;
+        color: var(--title-color);
+        font-size: 2.5rem;
+    }
+    
+    .card .responsiveInfo .description {
+        font-family: "Kanit", sans-serif;
+        font-size: 1.4em;
+        font-weight: 500;
+        width: 100%;
+        text-align: justify;
+        color: var(--description-color); 
+        margin-bottom: 4em;
+    }
+    
+    .card .responsiveInfo a {
+        color: var(--title-color);
+        border-radius: var(--image-border-radius);
+        border: 1px solid var(--title-color);
+        padding: 1em;
+        font-weight: 700;
+        font-size: 1.3em;
+        background-color: transparent;
+        user-select: none;
+        text-decoration: none;
+    }
+    
+    .card .responsiveInfo a:hover {
+        transition: all 1s ease;
+        background-color: var(--title-color);
+        color: var(--primary-background-color);
+    }
+    
+    .card img {
+        margin-top: 5em;
+        width: 100%;
+        height: 50rem;
+        border-radius: var(--image-border-radius);
+    }
+}
+
+@media (max-width: 720px){
+    .card img {
+        width: 100%;
+        height: 40rem;
+    }
+}
