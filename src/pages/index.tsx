@@ -1,8 +1,8 @@
 import Card from "@/components/Card/index"
 
-import VazantesWorld from "../../public/img/vazantes-world.jpeg"
+import VazantesIgreja from "../../public/img/vazantes-igreja.jpg"
 import VazantesDesenvolvida from "../../public/img/vazantes-desenvolvida.jpeg"
-import VazantesLegado from "../../public/img/vazantes-legado.jpeg"
+import VazantesPaisagem from "../../public/img/açude.jpg"
 
 export default function Home(){
 
@@ -14,7 +14,9 @@ export default function Home(){
                 <Card 
                     title="Vazantes: Uma Jornada Histórica"
 
-                    image={VazantesWorld}
+                    image={VazantesIgreja}
+
+                    imageFont="https://www.instagram.com/p/C0sCpwdO7F5/"
 
                     description="➤ Descubra a história rica e inspiradora de Vazantes, um distrito do
                     município de Aracoiaba, no Ceará. Mergulhe em suas raízes, explore seu
@@ -46,6 +48,7 @@ export default function Home(){
                     Em 1965, Vazantes, em virtude do contexto político da época, foi reintegrada ao município de Aracoiaba, permanecendo como distrito até os dias atuais."
 
                     image={VazantesDesenvolvida}
+                    imageFont="https://www.instagram.com/p/C2DJyfEuv4f/"
                 />
 
                 <Card 
@@ -68,7 +71,8 @@ export default function Home(){
                 <Card 
                     title="O Legado de Vazantes"
 
-                    image={VazantesLegado}
+                    image={VazantesPaisagem}
+                    imageFont="https://www.instagram.com/p/C5Dq3J8uwPa/?img_index=1"
 
                     description="➤ A história de Vazantes é rica em tradição e valores. A comunidade, unida por laços de amizade e respeito, construiu uma identidade singular, com orgulho de suas raízes.
                     A educação sempre teve um papel fundamental no desenvolvimento de Vazantes. A escola, um espaço de aprendizado e transformação, moldou gerações de moradores e contribuiu para o progresso da comunidade.

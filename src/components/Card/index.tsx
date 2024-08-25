@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/dist/shared/lib/get-img-props"
 import Image from "next/image"
-import Link from "next/link";
+import Link from "next/link"
 
 import styles from "../../styles/Card/index.module.css"
 
@@ -10,9 +10,10 @@ interface CardType {
     image?: string | StaticImageData;
     link?: string;
     path?: string;
+    imageFont?: string;
 }
 
-export default function Card({ title, description, image, link, path }: CardType) {
+export default function Card({ title, description, image, link, path, imageFont }: CardType) {
     return (
         <>
             <div className={styles.card}>
@@ -28,7 +29,10 @@ export default function Card({ title, description, image, link, path }: CardType
 
                     {link && <Link href={path!} target="_blank">{link}</Link>}
                 </div>
-                {image && <Image src={image} alt="vazantes-representation"/>}
+                <div className={styles.imageArea}>
+                    {image && <Image src={image} alt="vazantes-representation"/>}
+                    {imageFont && <Link href={imageFont} target="_blank" className={styles.imageFont}>Fonte: {imageFont}</Link>}
+                </div>
             </div>
         </>
     )

@@ -45,10 +45,14 @@
     color: var(--primary-background-color);
 }
 
-.card img {
+.card .imageArea img {
     width: 38rem;
     height: 36rem;
     border-radius: var(--image-border-radius);
+}
+
+.card .imageArea .imageFont {
+    color: #ccc;
 }
 
 
