@@ -4,18 +4,10 @@ import VazantesIgreja from "../../public/img/vazantes-igreja.jpg"
 import VazantesDesenvolvida from "../../public/img/vazantes-desenvolvida.jpeg"
 import VazantesPaisagem from "../../public/img/açude.jpg"
 import Script from "next/script"
-import { useEffect } from "react"
 
 export default function Home() {
 
     const vazantesLocation = "https://www.google.com.br/maps/place/Vazantes,+Aracoiaba+-+CE,+62750-000/@-4.4091052,-38.6931644,15z/data=!4m15!1m8!3m7!1s0x7bf2b761e85a3c1:0x5921230d6332fae2!2sVazantes,+Aracoiaba+-+CE,+62750-000!3b1!8m2!3d-4.4061102!4d-38.6872849!16s%2Fg%2F1tp8_7sn!3m5!1s0x7bf2b761e85a3c1:0x5921230d6332fae2!8m2!3d-4.4061102!4d-38.6872849!16s%2Fg%2F1tp8_7sn?hl=pt-PT&entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D"
-
-
-    useEffect(() => {
-        if(typeof window !== "undefined"){
-            (window.adsbygoogle = window.adsbygoogle || []).push({});
-        }
-    }, []);
 
     return (
         <>
@@ -42,11 +34,7 @@ export default function Home() {
                     data-ad-format="auto"
                     data-full-width-responsive="true"
                 />
-                <Script
-                    async
-                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-                    crossOrigin="anonymous"
-                />
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6306379407245797" crossOrigin="anonymous"></script>
 
                 <Card
                     title="A Chegada dos Primeiros Habitantes"
