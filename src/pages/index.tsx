@@ -3,15 +3,24 @@ import Card from "@/components/Card/index"
 import VazantesIgreja from "../../public/img/vazantes-igreja.jpg"
 import VazantesDesenvolvida from "../../public/img/vazantes-desenvolvida.jpeg"
 import VazantesPaisagem from "../../public/img/açude.jpg"
+import Script from "next/script"
+import { useEffect } from "react"
 
-export default function Home(){
+export default function Home() {
 
     const vazantesLocation = "https://www.google.com.br/maps/place/Vazantes,+Aracoiaba+-+CE,+62750-000/@-4.4091052,-38.6931644,15z/data=!4m15!1m8!3m7!1s0x7bf2b761e85a3c1:0x5921230d6332fae2!2sVazantes,+Aracoiaba+-+CE,+62750-000!3b1!8m2!3d-4.4061102!4d-38.6872849!16s%2Fg%2F1tp8_7sn!3m5!1s0x7bf2b761e85a3c1:0x5921230d6332fae2!8m2!3d-4.4061102!4d-38.6872849!16s%2Fg%2F1tp8_7sn?hl=pt-PT&entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D"
 
-    return(
+
+    useEffect(() => {
+        if(typeof window !== "undefined"){
+            (window.adsbygoogle = window.adsbygoogle || []).push({});
+        }
+    }, []);
+
+    return (
         <>
             <main>
-                <Card 
+                <Card
                     title="Vazantes: Uma Jornada Histórica"
 
                     image={VazantesIgreja}
@@ -25,14 +34,28 @@ export default function Home(){
                     link="Ver no Google Maps"
                     path={vazantesLocation}
                 />
-                <Card 
+                <ins
+                    className="adsbygoogle"
+                    style={{ display: "block" }}
+                    data-ad-client="ca-pub-6306379407245797"
+                    data-ad-slot="4651147400"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"
+                />
+                <Script
+                    async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                    crossOrigin="anonymous"
+                />
+
+                <Card
                     title="A Chegada dos Primeiros Habitantes"
 
                     description="➤ Há muitos anos, uma família cansada de viajar por longos dias, decidiu parar em uma região que lhes pareceu propícia ao plantio. Essa região, ainda desconhecida, se tornaria o berço de Vazantes.
                     A família, observando a terra fértil e a abundância de recursos naturais, decidiu se estabelecer nesse lugar, plantando as sementes do que viria a ser uma comunidade próspera.
                     Com o passar do tempo, outras famílias se juntaram à primeira, atraídas pela promessa de uma vida melhor e pela beleza natural da região. A comunidade começou a florescer, consolidando as bases do que seria Vazantes."
                 />
-                <Card 
+                <Card
                     title="A Fundação de Vazantes"
 
                     description="➤ A família Evangelista, a primeira a se estabelecer na região, desempenhou um papel fundamental na formação da comunidade. Seu legado se perpetua na história de Vazantes.
@@ -40,7 +63,7 @@ export default function Home(){
                     A construção da capela marca o início da história oficial de Vazantes. A comunidade, em constante crescimento, ganhava forma e identidade, com a capela como um marco central."
                 />
 
-                <Card 
+                <Card
                     title="O Desenvolvimento de Vazantes"
 
                     description="➤ Vazantes, em 1885, foi elevado à categoria de distrito, tornando-se parte do município de Aracoiaba, situado na microrregião do Maciço de Baturité, no Ceará. Sua história se entrelaça com a história de Aracoiaba, com suas raízes fincadas em um passado comum.
@@ -51,7 +74,7 @@ export default function Home(){
                     imageFont="https://www.instagram.com/p/C2DJyfEuv4f/"
                 />
 
-                <Card 
+                <Card
                     title="A Escola Capitão Antônio Joaquim: Um Marco Educacional"
 
                     description="➤ A Escola Capitão Antônio Joaquim, inaugurada em 1965, é um importante marco na história da educação de Vazantes. Seu nome, uma homenagem ao doador do terreno, Capitão Antônio Joaquim, pai do ilustre Dr. Francisco Maia de Oliveira, simboliza a dedicação e o compromisso com a educação da comunidade.
@@ -60,7 +83,7 @@ export default function Home(){
                     "
                 />
 
-                <Card 
+                <Card
                     title="A Evolução da Educação em Vazantes"
 
                     description="➤ Em 1965, além da construção da Escola Capitão Antônio Joaquim, outra escola de rede estadual foi inaugurada no distrito de Vazantes, marcando um período de grande avanço educacional.
@@ -68,7 +91,7 @@ export default function Home(){
                     A educação, além de preparar os alunos para o mercado de trabalho, contribuiu para a formação de cidadãos conscientes, capazes de construir um futuro melhor para Vazantes. A escola se tornou um espaço de desenvolvimento integral, preparando os alunos para a vida."
                 />
 
-                <Card 
+                <Card
                     title="O Legado de Vazantes"
 
                     image={VazantesPaisagem}

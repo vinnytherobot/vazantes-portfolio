@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import Link from "next/link";
+import Script from "next/script";
 
 export default function Document() {
   return (
@@ -11,25 +11,8 @@ export default function Document() {
         <meta property="og:url" content="https://vazantesportfolio.vercel.app/" />
         <meta name="google-adsense-account" content="ca-pub-6306379407245797" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6306379407245797" crossOrigin="anonymous"></script>
-
-
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6306379407245797" crossOrigin="anonymous"></script>
-        <ins
-          className="adsbygoogle"
-          style={{ display: "block" }}
-          data-ad-client="ca-pub-6306379407245797"
-          data-ad-slot="4651147400"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        ></ins>
-
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6306379407245797" crossOrigin="anonymous" />
       </Head>
-      <title>Vazantes - Portfólio</title>
       <body>
         <Main />
         <NextScript />
