@@ -14,6 +14,20 @@ export default function Document() {
 
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6306379407245797" crossOrigin="anonymous"></script>
 
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6306379407245797" crossOrigin="anonymous"></script>
+        <ins
+          className="adsbygoogle"
+          style={{ display: "block" }}
+          data-ad-client="ca-pub-6306379407245797"
+          data-ad-slot="4651147400"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
       </Head>
       <title>Vazantes - Portfólio</title>
       <body>
