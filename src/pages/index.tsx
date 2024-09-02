@@ -3,7 +3,6 @@ import Card from "@/components/Card/index"
 import VazantesIgreja from "../../public/img/vazantes-igreja.jpg"
 import VazantesDesenvolvida from "../../public/img/vazantes-desenvolvida.jpeg"
 import VazantesPaisagem from "../../public/img/açude.jpg"
-import Script from "next/script"
 
 export default function Home() {
 
@@ -26,16 +25,6 @@ export default function Home() {
                     link="Ver no Google Maps"
                     path={vazantesLocation}
                 />
-                <ins
-                    className="adsbygoogle"
-                    style={{ display: "block" }}
-                    data-ad-client="ca-pub-6306379407245797"
-                    data-ad-slot="4651147400"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"
-                />
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6306379407245797" crossOrigin="anonymous"></script>
-
                 <Card
                     title="A Chegada dos Primeiros Habitantes"
 
