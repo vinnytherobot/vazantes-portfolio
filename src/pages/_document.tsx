@@ -11,6 +11,9 @@ export default function Document() {
         <meta property="og:url" content="https://vazantesportfolio.vercel.app/" />
         <meta name="google-adsense-account" content="ca-pub-6306379407245797" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6306379407245797" crossOrigin="anonymous"></script>
+
       </Head>
       <title>Vazantes - Portfólio</title>
       <body>
