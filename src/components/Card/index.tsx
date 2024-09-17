@@ -13,12 +13,13 @@ interface CardType {
     link?: string;
     path?: string;
     imageFont?: string;
+    id?: string;
 }
 
-export default function Card({ title, description, image, link, path, imageFont }: CardType) {
+export default function Card({ title, description, image, link, path, imageFont, id }: CardType) {
     return (
         <>
-            <div className={styles.card}>
+            <div className={styles.card} id={id}>
                 <div className={styles.info}>
                     <h2 className={styles.title}>{title}</h2>
                     <h4 className={styles.description}>{description}</h4>

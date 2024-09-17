@@ -1,8 +1,12 @@
-import Card from "@/components/Card/index"
+import styles from "../styles/Home.module.css"
 
 import VazantesIgreja from "../../public/img/vazantes-igreja.jpg"
 import VazantesDesenvolvida from "../../public/img/vazantes-desenvolvida.jpeg"
 import VazantesPaisagem from "../../public/img/açude.jpg"
+
+import Card from "@/components/Card/index"
+import Footer from "@/components/Footer/index"
+
 
 export default function Home() {
 
@@ -12,6 +16,7 @@ export default function Home() {
         <>
             <main>
                 <Card
+                    id="vazantes"
                     title="Vazantes: Uma Jornada Histórica"
 
                     image={VazantesIgreja}
@@ -26,6 +31,7 @@ export default function Home() {
                     path={vazantesLocation}
                 />
                 <Card
+                    id="arrival"
                     title="A Chegada dos Primeiros Habitantes"
 
                     description="➤ Há muitos anos, uma família cansada de viajar por longos dias, decidiu parar em uma região que lhes pareceu propícia ao plantio. Essa região, ainda desconhecida, se tornaria o berço de Vazantes.
@@ -33,6 +39,7 @@ export default function Home() {
                     Com o passar do tempo, outras famílias se juntaram à primeira, atraídas pela promessa de uma vida melhor e pela beleza natural da região. A comunidade começou a florescer, consolidando as bases do que seria Vazantes."
                 />
                 <Card
+                    id="foundation"
                     title="A Fundação de Vazantes"
 
                     description="➤ A família Evangelista, a primeira a se estabelecer na região, desempenhou um papel fundamental na formação da comunidade. Seu legado se perpetua na história de Vazantes.
@@ -41,6 +48,7 @@ export default function Home() {
                 />
 
                 <Card
+                    id="development"
                     title="O Desenvolvimento de Vazantes"
 
                     description="➤ Vazantes, em 1885, foi elevado à categoria de distrito, tornando-se parte do município de Aracoiaba, situado na microrregião do Maciço de Baturité, no Ceará. Sua história se entrelaça com a história de Aracoiaba, com suas raízes fincadas em um passado comum.
@@ -52,6 +60,7 @@ export default function Home() {
                 />
 
                 <Card
+                    id="school"
                     title="A Escola Capitão Antônio Joaquim: Um Marco Educacional"
 
                     description="➤ A Escola Capitão Antônio Joaquim, inaugurada em 1965, é um importante marco na história da educação de Vazantes. Seu nome, uma homenagem ao doador do terreno, Capitão Antônio Joaquim, pai do ilustre Dr. Francisco Maia de Oliveira, simboliza a dedicação e o compromisso com a educação da comunidade.
@@ -61,6 +70,7 @@ export default function Home() {
                 />
 
                 <Card
+                    id="evolution"
                     title="A Evolução da Educação em Vazantes"
 
                     description="➤ Em 1965, além da construção da Escola Capitão Antônio Joaquim, outra escola de rede estadual foi inaugurada no distrito de Vazantes, marcando um período de grande avanço educacional.
@@ -69,6 +79,7 @@ export default function Home() {
                 />
 
                 <Card
+                    id="legacy"
                     title="O Legado de Vazantes"
 
                     image={VazantesPaisagem}
@@ -79,6 +90,7 @@ export default function Home() {
                     Vazantes é mais do que um distrito. É um lugar onde a comunidade se sente acolhida, integrada e unida por laços fortes de amizade e solidariedade. É um lugar que respira história, tradição e esperança."
                 />
             </main>
+            <Footer />
         </>
     )
 }
